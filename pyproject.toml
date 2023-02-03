@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "serialise"
-version = "0.0.1"
+version = "0.0.2"
 description = "Save down data to a serialised format, for later reuse"
 readme = "README.md"
 authors = [{ name = "Tyler Hofmeister", email = "tyler.hofmeister@gmail.com" }]
@@ -32,4 +32,4 @@ Homepage = "https://github.com/tylerhof/serialise"
 # twine upload -r testpypi dist/*
 #
 # Note to install in another project run:
-# pip install --index-url https://test.pypi.org/simple/ serialise
+# pip install --upgrade --index-url https://test.pypi.org/simple/ serialise
