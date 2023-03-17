@@ -4,12 +4,13 @@
 requires      = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-py-modules = []
+[tool.setuptools.packages.find]
+include = ["tests*", "serialise*"]
+exclude = ["data*"]
 
 [project]
 name = "serialise"
-version = "0.0.7"
+version = "0.0.9"
 description = "Save down data to a serialised format, for later reuse"
 readme = "README.md"
 authors = [{ name = "Tyler Hofmeister", email = "tyler.hofmeister@gmail.com" }]
