@@ -7,6 +7,7 @@ from exceptionhandling.functor import Functor
 
 def execute_sql(connection_name, sql_lambda):
     with contextlib.closing(sqlite3.connect(connection_name)) as open_connection:
+        open_connection.row_factory = sqlite3.Row
         with contextlib.closing(open_connection.cursor()) as cursor:
             return sql_lambda(open_connection, cursor)
 

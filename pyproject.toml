@@ -10,7 +10,7 @@ exclude = ["data*"]
 
 [project]
 name = "serialise"
-version = "0.0.9"
+version = "0.0.10"
 description = "Save down data to a serialised format, for later reuse"
 readme = "README.md"
 authors = [{ name = "Tyler Hofmeister", email = "tyler.hofmeister@gmail.com" }]
